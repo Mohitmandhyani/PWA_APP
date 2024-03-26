@@ -1,0 +1,103 @@
+/* Reset default margin and padding, set font family */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Google font Roboto for a modern look */
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Styling the header */
+header {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem; /* Larger font size */
+  color: #fff; /* White text color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for a subtle effect */
+}
+
+/* Styling the navigation menu */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff; /* White text color */
+  font-size: 1.5rem; /* Larger font size */
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffcc66; /* Lighter orange color on hover */
+}
+
+/* Styling the main content */
+main {
+  padding: 20px;
+  color: #333;
+}
+
+/* Styling the featured products section */
+.featured-products {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 20px; /* Larger border radius for a softer look */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+/* Styling the product list */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Styling individual product cards */
+.product-card {
+  width: 300px; /* Increased width for better presentation */
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px; /* Larger border radius */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.product-card:hover {
+  transform: translateY(-5px); /* Lift the card slightly on hover */
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 20px; /* Larger border radius */
+}
+
+/* Styling the footer */
+footer {
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  color: #fff; /* White text color */
+}

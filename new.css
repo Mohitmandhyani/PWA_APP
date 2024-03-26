@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+main {
+  padding: 20px;
+}
+
+.featured-products {
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.product-card p.price {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.product-card button {
+  background-color: #0070c9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #005999;
+}
+
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Your existing CSS styles here */
+
+.product-counter {
+  display: flex;
+  align-items: center;
+}
+
+.product-counter button {
+  background-color: #0070c9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-counter button:hover {
+  background-color: #005999;
+}
+
+.product-counter .count {
+  margin: 0 10px;
+  font-size: 1.2em;
+  color: #333;
+}
+

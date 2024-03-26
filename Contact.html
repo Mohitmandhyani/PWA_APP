@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<style>
+  /* CSS for fire effect background */
+  body {
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+  }
+  .fire {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://www.rawpixel.com/image/12672382/png-flame-spark-bonfire-illuminated-exploding-generated-image-rawpixel');
+    background-size: cover;
+    pointer-events: none;
+    animation: flicker 0.2s infinite alternate;
+  }
+  @keyframes flicker {
+    0% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  /* Basic contact form styles */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+  }
+  .contact-form {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  .input-group {
+    margin-bottom: 20px;
+  }
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .input-group input, .input-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  .input-group textarea {
+    height: 150px;
+  }
+  .btn {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .btn:hover {
+    background-color: #ff6600;
+  }
+</style>
+</head>
+<body>
+<div class="fire"></div>
+<div class="container">
+  <h1>Contact Us</h1>
+  <div class="contact-form">
+    <form action="#" method="post">
+      <div class="input-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="input-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
